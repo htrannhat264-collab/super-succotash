@@ -1,0 +1,55 @@
+{
+  "name": "sicbo-ai-galaxy",
+  "version": "8.0.0",
+  "description": "Sicbo AI v8.0 GALAXY - 25 Models Ensemble, 60+ Cầu, 100 Features, Không Random - Không Cứng",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pm2": "pm2 start server.js --name sicbo-galaxy",
+    "pm2:logs": "pm2 logs sicbo-galaxy",
+    "pm2:stop": "pm2 stop sicbo-galaxy",
+    "pm2:restart": "pm2 restart sicbo-galaxy",
+    "reset": "rm -f galaxy_memory.json galaxy_memory.backup.json galaxy_log.json && echo 'Memory reset done'"
+  },
+  "keywords": [
+    "sicbo",
+    "taixiu",
+    "ai",
+    "prediction",
+    "machine-learning",
+    "neural-network",
+    "ensemble",
+    "pattern-recognition",
+    "markov-chain",
+    "q-learning",
+    "lstm",
+    "transformer",
+    "random-forest",
+    "xgboost",
+    "svm",
+    "knn",
+    "bayesian"
+  ],
+  "author": "Sicbo AI Galaxy",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/sicbo-ai-galaxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/sicbo-ai-galaxy/issues"
+  },
+  "homepage": "https://github.com/yourusername/sicbo-ai-galaxy#readme"
+}
